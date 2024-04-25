@@ -1,0 +1,14 @@
+C:\Users\azgrovizkz\Desktop\PTI - ALG II\estoqueProduto\obj\Debug\net8.0\PTI - ALG II.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\azgrovizkz\Desktop\PTI - ALG II\estoqueProduto\obj\Debug\net8.0\PTI - ALG II.AssemblyInfoInputs.cache
+C:\Users\azgrovizkz\Desktop\PTI - ALG II\estoqueProduto\obj\Debug\net8.0\PTI - ALG II.AssemblyInfo.cs
+C:\Users\azgrovizkz\Desktop\PTI - ALG II\estoqueProduto\obj\Debug\net8.0\PTI - ALG II.csproj.CoreCompileInputs.cache
+C:\Users\azgrovizkz\Desktop\PTI - ALG II\estoqueProduto\bin\Debug\net8.0\PTI - ALG II.exe
+C:\Users\azgrovizkz\Desktop\PTI - ALG II\estoqueProduto\bin\Debug\net8.0\PTI - ALG II.deps.json
+C:\Users\azgrovizkz\Desktop\PTI - ALG II\estoqueProduto\bin\Debug\net8.0\PTI - ALG II.runtimeconfig.json
+C:\Users\azgrovizkz\Desktop\PTI - ALG II\estoqueProduto\bin\Debug\net8.0\PTI - ALG II.dll
+C:\Users\azgrovizkz\Desktop\PTI - ALG II\estoqueProduto\bin\Debug\net8.0\PTI - ALG II.pdb
+C:\Users\azgrovizkz\Desktop\PTI - ALG II\estoqueProduto\obj\Debug\net8.0\PTI - ALG II.dll
+C:\Users\azgrovizkz\Desktop\PTI - ALG II\estoqueProduto\obj\Debug\net8.0\refint\PTI - ALG II.dll
+C:\Users\azgrovizkz\Desktop\PTI - ALG II\estoqueProduto\obj\Debug\net8.0\PTI - ALG II.pdb
+C:\Users\azgrovizkz\Desktop\PTI - ALG II\estoqueProduto\obj\Debug\net8.0\PTI - ALG II.genruntimeconfig.cache
+C:\Users\azgrovizkz\Desktop\PTI - ALG II\estoqueProduto\obj\Debug\net8.0\ref\PTI - ALG II.dll
