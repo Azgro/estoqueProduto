@@ -14,11 +14,14 @@ programa.*/
 // [5] Saída estoque
 // [0] Sair
 
-using System;
-using System.Collections.Generic;
+using System.Reflection.Metadata.Ecma335;
 
 namespace estoqueMercado {
     
+    using System;
+    using System.Collections.Generic;
+
+
     public class Produto
     {
     public string nomeProduto { get; set; }
@@ -29,62 +32,55 @@ namespace estoqueMercado {
     public class EstoqueMercado
     {
         static List<Produto> produtos = new List<Produto>();
-        static void Main(string[] args) 
-        {
-            string inicio;
 
-            Console.WriteLine("Digite: Iniciar");
-            inicio = Console.ReadLine();
-
-            if (inicio.ToLower() == "iniciar")
+        
+        
+        static void Main()
+        { 
+            
             {
-                menu();   
-            }
-            else
-            {
-                Console.WriteLine("Comando inválido.");
+                Menu();
             }
         }
-        
-        static void menu()
+        static void Menu()
         {   
             int num;
-
-            Console.WriteLine("Selecione o numero desejado");
-            num = Convert.ToInt32(Console.ReadLine());
-
-             Console.WriteLine("[1] Novo");
-             Console.WriteLine("[2] Listar Produstos");
-             Console.WriteLine("[3] Remover produtos");
-             Console.WriteLine("[4] Entrada estoque");
-             Console.WriteLine("[5] Saída estoque");
-             Console.WriteLine("[0] Sair");
-
-
-            switch (num)
+            do
             {
-                case 1:
-                    adicionarProduto();
-                    break;
-                case 2:
-                    listaProduto();
-                    break;
-                case 3:
-                    removerProduto();
-                    break;
-                case 4:
-                    entradaEstoque();
-                    break;
-                case 5:
-                    saidaEstoque();
-                    break;
-                case 0:
-                    Console.WriteLine("Saindo...");
-                    break;
-                default:
-                    Console.WriteLine("Opção inválida.");
-                    break;
-            }
+                Console.WriteLine("[1] Novo");
+                Console.WriteLine("[2] Listar Produstos");
+                Console.WriteLine("[3] Remover produtos");
+                Console.WriteLine("[4] Entrada estoque");
+                Console.WriteLine("[5] Saída estoque");
+                Console.WriteLine("[0] Sair");
+                Console.WriteLine("Selecione o numero desejado");
+                num = Convert.ToInt32(Console.ReadLine());
+
+                switch (num)
+                {
+                    case 1:
+                        adicionarProduto();
+                        break;
+                    case 2:
+                        listaProduto();
+                        break;
+                    case 3:
+                        removerProduto();
+                        break;
+                    case 4:
+                        entradaEstoque();
+                        break;
+                    case 5:
+                        saidaEstoque();
+                        break;
+                    case 0:
+                        Console.WriteLine("Saindo...");
+                        break;
+                    default:
+                        Console.WriteLine("Comando invalido");
+                        break;
+                }
+            } while (num != 0);
         }
 
         static void adicionarProduto()
@@ -103,9 +99,7 @@ namespace estoqueMercado {
             
             produtos.Add(produto);
 
-            Console.WriteLine("Produto adicionado com sucesso: " + produto.nomeProduto);
-
-            
+            Console.WriteLine("Produto adicionado com sucesso: " + produto.nomeProduto);            
         }
           
         static void listaProduto()
@@ -152,7 +146,7 @@ namespace estoqueMercado {
             {
                 Console.WriteLine("Digite a quantidade a ser adicionada:");
                 int quantidade = Convert.ToInt32(Console.ReadLine());
-                produtos.quantidade += quantidade;
+                produto.quantidade += quantidade;
                 Console.WriteLine($"Estoque de '{nomeProduto}' atualizado para {produto.quantidade} unidade.");
             }
             else
@@ -163,7 +157,28 @@ namespace estoqueMercado {
 
         static void saidaEstoque()
         {
+            Console.WriteLine("Digite o nome do produto para saida de estoque:");
+            string nomeProduto = Console.ReadLine();
 
-        }
+            Produto produto= produtos.Find(p => p.nomeProduto == nomeProduto);
+            if (produto != null)
+            {
+                Console.WriteLine("Digite a quantidade a ser removida:");
+                int quantidade = Convert.ToInt32(Console.ReadLine());
+                if (produto.quantidade >= quantidade)
+                {
+                    produto.quantidade -= quantidade;
+                    Console.WriteLine($"estoque de '{nomeProduto}' atualizada para {produto.quantidade} unidades.");
+                }
+                else
+                {
+                    Console.WriteLine($"Estoque insuficiente para '{nomeProduto}'.");
+                }
+            }
+            else
+            {
+                Console.WriteLine($"Produto '{nomeProduto}' não econtrado.");
+            }
+        }        
     }
 }

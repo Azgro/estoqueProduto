@@ -12,3 +12,4 @@ C:\Users\azgrovizkz\Desktop\PTI - ALG II\estoqueProduto\obj\Debug\net8.0\refint\
 C:\Users\azgrovizkz\Desktop\PTI - ALG II\estoqueProduto\obj\Debug\net8.0\PTI - ALG II.pdb
 C:\Users\azgrovizkz\Desktop\PTI - ALG II\estoqueProduto\obj\Debug\net8.0\PTI - ALG II.genruntimeconfig.cache
 C:\Users\azgrovizkz\Desktop\PTI - ALG II\estoqueProduto\obj\Debug\net8.0\ref\PTI - ALG II.dll
+C:\Users\azgrovizkz\Desktop\PTI - ALG II\estoqueProduto\obj\Debug\net8.0\PTI - ALG II.sourcelink.json
