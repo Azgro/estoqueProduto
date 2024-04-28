@@ -33,16 +33,7 @@ namespace estoqueMercado {
     {
         static List<Produto> produtos = new List<Produto>();
 
-        
-        
         static void Main()
-        { 
-            
-            {
-                Menu();
-            }
-        }
-        static void Menu()
         {   
             int num;
             do
